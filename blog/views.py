@@ -62,7 +62,7 @@ def post_share(request, post_id):
         return render(request, 'blog/post/share.html', {'post':post,'form':form})
 
 def post_detail(request, year, month, day, post):
-    post = get_object_or_404(Post, slug=post,status='published',publish_year=year,publishmonth=month,publish_day=day)
+    post = get_object_or_404(Post, slug=post,status='published',publish__year=year,publish__month=month,publish__day=day)
     # List of active comments for this post
     comments = post.comments.filter(active=True)
     new_comment = None
