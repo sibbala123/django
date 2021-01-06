@@ -25,7 +25,7 @@ SECRET_KEY = 'pg7hcom4x0kk-__i=a%k-(6r4k7y&4kr2^8=zrq_^9@ixh2^k1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','demo-suvenblog.herokuapp.com/blog']
+ALLOWED_HOSTS = ['127.0.0.1','demo-suvenblog.herokuapp.com']
 
 
 # Application definition
